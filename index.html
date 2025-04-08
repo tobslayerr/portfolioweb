@@ -207,46 +207,24 @@
     </div>
   </section>
   
-  <section id="contact" class="contact-section">
-    <div class="contact-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
-      <h2>LET'S JAM TOGETHER:<br><span>CONNECT AND CREATE!</span></h2>
-      <p>I'd love to hear about your brand's vision and how I can help it shine!</p>
-      <a href="mailto:ragahraf@gmail.com" class="contact-button">Contact me</a>
+  <section id="contact">
+    <div id="particles-contact-bg">
+      <div id="particles-js"></div>
+      <div class="contact-section">
+        <div class="contact-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <h2>LET'S JAM TOGETHER:<br><span>CONNECT AND CREATE!</span></h2>
+          <p>I'd love to hear about your brand's vision and how I can help it shine!</p>
+          <a href="mailto:ragahraf@gmail.com" class="contact-button">Contact me</a>
+        </div>
+      </div>
     </div>
   </section>
   
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-    document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const card = button.closest('.experience-photo-card');
-      card.classList.toggle('expanded');
-      button.textContent = card.classList.contains('expanded') ? 'Read Less' : 'Read More';
-    });
-  });
-  const typed = new Typed('#typed', {
-    strings: ["Hi, I'm Rafi Muhammad👋", "Welcome to my Website!", "Let's Build Something Cool!"],
-    typeSpeed: 80,
-    backSpeed: 70,
-    backDelay: 2000,
-    startDelay: 1000,
-    loop: true,
-    showCursor: true,
-    cursorChar: '|',
-  });
-  VANTA.WAVES({
-    el: "#vanta-bg",
-    color: 0x0a1d3a, 
-    shininess: 50,
-    waveHeight: 20,
-    waveSpeed: 0.5,
-    zoom: 1.2,
-    backgroundColor: 0x0a1d3a 
-  });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
