@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <title>Portfolio - Ragahraf</title>
 </head>
 <body>
+  <div id="vanta-bg"></div>
   <nav>
     <div class="left">
-      <a href="/">Ragahraf</a>
+      <a href="/">A Lowkey Portofolio</a>
     </div>
-
     <div class="right">
       <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-linkedin"></i>
@@ -34,9 +35,9 @@
   </nav>
 
   <main>
-    <section class="hero-section">
+    <section class="hero-section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <div class="text">
-        <h2>Hi, I'm Rafi Muhammad Gahraf 👋</h2>
+        <h2><span id="typed"></span></h2>
         <p>Hello world!, yeah, I know it sounds cliché, but hey, here goes a bit about me. Most people know me as Gahraf, though my real name is Rafi Muhammad (don’t ask how the nickname came about, it’s unrelated). I’m currently pursuing my college life at Universitas Padjadjaran, majoring in Electrical Engineering, a degree I’ve dreamed of since senior high. It’s always been my passion, something that constantly sparks curiosity in me whenever I see anything related to electrical systems.</p>
 
         <div class="links">
@@ -71,8 +72,8 @@
         <img src="src/profileimage.jpg" alt="profile-picture-gahraf">
       </div>
     </section>
-
-    <section id="aboutme" class="aboutme-section">
+    
+    <section id="aboutme" class="aboutme-section" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <h2>About Me</h2>
       <div class="text">
         Now that I’m living the college life, I’m diving into every organizational opportunity I can find, trying to push my limits within the short span of these four years. Whilst i have this many activities in my college, I still make time for the things I love, like reading literature, digging deeper into electrical topics, watching movies, and writing letters to the girl I love. When I’m not alone, I enjoy spending time with my friends.     
@@ -80,77 +81,86 @@
       </div>
     </section>
 
-    <section id="education" class="education-section">
+    <section id="education" class="education-section" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <h2>Education</h2>
       <div class="timeline">
-        <div class="edu-box">
-            <div class="edu-content">
-                <div class="edu-header">
-                    <img src="src/logosman37.png" alt="sman37" class="edu-logo">
-                    <div>
-                      <h3>SMAN 37 JAKARTA</h3>
-                      <span class="date">June 2021 – March 2024</span>
-                    </div>
-                </div>
-                <ul>
-                  <li>Student of IPA Class</li>
-                  <li>Avicenna Private School [1st year of Senior High School]</li>
-                  <li>SMAN 37 JAKARTA [2nd & 3rd year of Senior High School]</li>
-                </ul> 
+        <div class="line"></div> 
+        <div class="edu-box box-1">
+          <div class="circle-marker"></div>
+          <div class="edu-header">
+            <img src="src/logosman37.png" alt="SMAN 37 Logo" class="edu-logo">
+            <div>
+              <h3>SMAN 37 JAKARTA</h3>
+              <span class="date">June 2021 – March 2024</span>
             </div>
-            <div class="edu-box">
-                <div class="edu-content">
-                    <div class="edu-header">
-                        <img src="src/logounpad.png" alt="Unpad Logo" class="edu-logo">
-                    <div>
-                        <h3>University of Padjadjaran</h3>
-                        <span class="date">August 2024 – Present</span>
-                    </div>
-                </div>
-                  <ul>
-                    <li>First year College Student</li>
-                    <li>Padjadjaran University</li>
-                    <li>Electrical Engineering Major</li>
-                  </ul>
-                </div>
-            </div>
+          </div>
+          <ul class="edu-details">
+            <li>Student of IPA Class</li>
+            <li>Avicenna Private School [1st year]</li>
+            <li>SMAN 37 Jakarta [2nd & 3rd year]</li>
+          </ul>
         </div>
+    
+        <div class="edu-box box-2">
+          <div class="circle-marker"></div>
+          <div class="edu-header">
+            <img src="src/logounpad.png" alt="Unpad Logo" class="edu-logo">
+            <div>
+              <h3>Padjajaran University</h3>
+              <span class="date">August 2024 – Present</span>
+            </div>
+          </div>
+          <ul class="edu-details">
+            <li>First year College Student</li>
+            <li>Padjadjaran University</li>
+            <li>Electrical Engineering Major</li>
+          </ul>
+        </div>
+      </div>
     </section>
     
-    <h2 class="section-title">Work Experience</h2>
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">Work Experience</h2>
+    <section id="workexperience" class="workexperience-section" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
 
-<section id="workexperience" class="workexperience-section">
+      <div class="experience-photo-card">
+        <img src="src/basket.jpg" alt="Basketball Activity" class="portrait-img">
+          <div class="card-content">
+            <h3>Captain of Basketball Extracurricular in Junior High</h3>
+            <div class="experience-details">
+            <ul>
+              <li>Provided leadership to a team of over 30 players, facilitating training and collaboration.</li>
+              <li>Successfully led the team to one gold medal and two consecutive bronze medal wins, demonstrating strategic planning and motivation.</li>
+            </ul>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+      </div>
 
-  <div class="experience-photo-card">
-    <img src="src/basket.jpg" alt="Basketball Activity" class="portrait-img">
-    <div class="card-content">
-      <h3>Captain of Basketball Extracurricular in Junior High</h3>
-      <ul>
-        <li>Provided leadership to a team of over 30 players, facilitating training and collaboration.</li>
-        <li>Successfully led the team to one gold medal and two consecutive bronze medal wins, demonstrating strategic planning and motivation.</li>
-      </ul>
-    </div>
-  </div>
+      <div class="experience-photo-card">
+          <img src="src/okk.jpg" alt="Class President OKK RK108">
+            <div class="card-content">
+              <h3>President Class for OKK RK108</h3>
+            <div class="experience-details">
+            <ul>
+              <li>Directed and supervised 35 college students over a semester, ensuring effective teamwork and participation.</li>
+              <li>Coordinated four social initiatives, fostering community engagement and organizational success.</li>
+            </ul>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+      </div>
 
-  <div class="experience-photo-card">
-    <img src="src/okk.jpg" alt="Class President OKK RK108">
-    <div class="card-content">
-      <h3>President Class for OKK RK108</h3>
-      <ul>
-        <li>Directed and supervised 35 college students over a semester, ensuring effective teamwork and participation.</li>
-        <li>Coordinated four social initiatives, fostering community engagement and organizational success.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="experience-photo-card">
+    <div class="experience-photo-card">
     <img src="src/semnas.jpg" alt="Logistics Volunteer FUTURA 2024">
     <div class="card-content">
       <h3>Volunteers of Logistics in SEMINAR NASIONAL FUTURA 2024</h3>
+      <div class="experience-details">
       <ul>
         <li>Assisted in event preparation and coordination.</li>
         <li>Collaborated effectively with diverse teams to address logistical needs.</li>
       </ul>
+      </div>
+      <button class="read-more-btn">Read More</button>
     </div>
   </div>
 
@@ -158,9 +168,12 @@
     <img src="src/IEEE.jpg" alt="Graphic Design IEEE SB UNPAD">
     <div class="card-content">
       <h3>Staff of Graphic Design in IEEE SB UNPAD</h3>
+      <div class="experience-details">
       <ul>
         <li>Assisted social media live reports and event designs.</li>
       </ul>
+      </div>
+      <button class="read-more-btn">Read More</button>
     </div>
   </div>
 
@@ -168,18 +181,21 @@
     <img src="src/hmte.jpg" alt="Graphic Design IEEE SB UNPAD">
     <div class="card-content">
       <h3>Staff of Dept. Relasi in BE HMTE</h3>
+      <div class="experience-details">
       <ul>
         <li>In charge of graduation appreciation event.</li>
         <li>⁠Head of Div. Event in SYNECTRA that holds Dies Natalis, Semnas, and EFT with 200+ audience.</li>
       </ul>
+      </div>
+      <button class="read-more-btn">Read More</button>
     </div>
   </div>
 
   </section>
 
   <section id="skills" class="skills-section">
-    <h2 class="skills-title">Key Skills</h2>
-    <div class="skills-container">
+    <h2 class="skills-title" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">Key Skills</h2>
+    <div class="skills-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <div class="skill-box">Office Suite Software</div>
       <div class="skill-box">Problem Solving</div>
       <div class="skill-box">Consistency Work</div>
@@ -192,7 +208,7 @@
   </section>
   
   <section id="contact" class="contact-section">
-    <div class="contact-content">
+    <div class="contact-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <h2>LET'S JAM TOGETHER:<br><span>CONNECT AND CREATE!</span></h2>
       <p>I'd love to hear about your brand's vision and how I can help it shine!</p>
       <a href="mailto:ragahraf@gmail.com" class="contact-button">Contact me</a>
@@ -200,5 +216,37 @@
   </section>
   
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.experience-photo-card');
+      card.classList.toggle('expanded');
+      button.textContent = card.classList.contains('expanded') ? 'Read Less' : 'Read More';
+    });
+  });
+  const typed = new Typed('#typed', {
+    strings: ["Hi, I'm Rafi Muhammad👋", "Welcome to my Website!", "Let's Build Something Cool!"],
+    typeSpeed: 80,
+    backSpeed: 70,
+    backDelay: 2000,
+    startDelay: 1000,
+    loop: true,
+    showCursor: true,
+    cursorChar: '|',
+  });
+  VANTA.WAVES({
+    el: "#vanta-bg",
+    color: 0x0a1d3a, 
+    shininess: 50,
+    waveHeight: 20,
+    waveSpeed: 0.5,
+    zoom: 1.2,
+    backgroundColor: 0x0a1d3a 
+  });
+  </script>
 </body>
 </html>
